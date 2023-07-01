@@ -37,7 +37,7 @@ function fillCards(produtos) {
         botaoFavorito.style.color = 'red';
         produtos[id].favorito = true;
       } else {
-        alert(`${produtos[id].titulo} foi removido dos favoritos com sucesso.`);
+        alert(`${produtos[id].titulo} foi removido dos favoritos.`);
         botaoFavorito.style.color = 'rgb(168, 9, 9)'
         produtos[id].favorito = false;
       }

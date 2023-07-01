@@ -1,6 +1,8 @@
 import createHeader from "./header.js";
 import createCards from "./card.js";
+import createOptions from "./selectOption.js";
 
+/* Dados */
 let menus = ['Todos os remédios', 'Sobre nós', 'Fale conosco'];
 
 let logo = {
@@ -8,7 +10,7 @@ let logo = {
   nomeLogo: 'Farmácia Milagrosa',
   alt: 'Imagem de logotipo',
   logoTitulo: 'Farmácia Milagrosa'
-}
+};
 
 let medicamentos = [
   {
@@ -67,11 +69,21 @@ let medicamentos = [
   }
 ];
 
+let assuntos = ['Selecione', 'Comercial', 'Dúvidas', 'Revenda'];
+
+/* Elementos */
 let header = document.getElementsByTagName('header')[0];
-let cardBody = document.querySelector('#card-body')
+let cardBody = document.querySelector('#card-body');
+let assuntoElement = document.getElementById('assunto')
 
+/* Criação */
 createHeader(header, logo, menus);
-createCards(cardBody, medicamentos.length, medicamentos);
 
+if (cardBody != null) {
+  createCards(cardBody, medicamentos.length, medicamentos);
+}
 
+if (assuntoElement != null) {
+  createOptions(assuntoElement, assuntos);
+}
 
