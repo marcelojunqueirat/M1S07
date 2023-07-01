@@ -14,6 +14,7 @@ function fillCards(produtos) {
     let precoProduto = elementoCard.querySelector('h1');
     let imagemProduto = elementoCard.querySelector('img');
     let botaoAdicionar = elementoCard.querySelector('button');
+    let botaoFavorito = elementoCard.querySelector('i');
   
     nomeProduto.innerText = produtos[id].titulo;
     precoProduto.innerText= produtos[id].valor;
@@ -26,6 +27,26 @@ function fillCards(produtos) {
       console.log(produtos[id].titulo);
       console.log(produtos);
       alert(`${produtos[id].titulo} foi adicionado ao carrinho com sucesso.`);
+    })
+
+    botaoFavorito.addEventListener('click', () => {
+      console.log(produtos[id].titulo);
+
+      if(produtos[id].favorito === false) {
+        alert(`${produtos[id].titulo} foi adicionado aos favoritos com sucesso.`);
+        botaoFavorito.style.color = 'red';
+        produtos[id].favorito = true;
+      } else {
+        alert(`${produtos[id].titulo} foi removido dos favoritos com sucesso.`);
+        botaoFavorito.style.color = 'rgb(168, 9, 9)'
+        produtos[id].favorito = false;
+      }
+
+      produtos.forEach(element => {
+        if (element.favorito === true){
+          console.log(element)
+        }
+      });
     })
   }
 }

@@ -17,6 +17,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 1',
     unidade: 'un',
+    favorito: false,
     valor: 'R$ 27,99'
   },
   {
@@ -25,6 +26,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 2',
     unidade: 'cp',
+    favorito: false,
     valor: 'R$ 12,91'
   },
   {
@@ -33,6 +35,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 3',
     unidade: 'un',
+    favorito: false,
     valor: 'R$ 6,77'
   },  
   {
@@ -41,6 +44,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 4',
     unidade: 'un',
+    favorito: false,
     valor: 'R$ 155,60'
   },
   {
@@ -49,6 +53,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 5',
     unidade: 'un',
+    favorito: false,
     valor: 'R$ 13,00'
   },
   {
@@ -57,6 +62,7 @@ let medicamentos = [
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 6',
     unidade: 'un',
+    favorito: false,
     valor: 'R$ 23,15'
   }
 ];
