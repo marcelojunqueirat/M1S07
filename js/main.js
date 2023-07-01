@@ -12,7 +12,7 @@ let logo = {
 
 let medicamentos = [
   {
-    id: 1,
+    id: 0,
     titulo:'SHAMPOO JOHNSONS BABY CABELOS CLAROS 400ML',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 1',
@@ -20,7 +20,7 @@ let medicamentos = [
     valor: 'R$ 27,99'
   },
   {
-    id: 2,
+    id: 1,
     titulo:'CIMEGRIPE 400MG COM 20 CÁPSULAS',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 2',
@@ -28,7 +28,7 @@ let medicamentos = [
     valor: 'R$ 12,91'
   },
   {
-    id: 3,
+    id: 2,
     titulo:'LORATADINA CIMED COM 12 COMPRIMIDOS 10MG GENERICO',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 3',
@@ -36,7 +36,7 @@ let medicamentos = [
     valor: 'R$ 6,77'
   },  
   {
-    id: 4,
+    id: 3,
     titulo:'TOPERMA 700MG COM 10 EMPLASTROS',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 4',
@@ -44,7 +44,7 @@ let medicamentos = [
     valor: 'R$ 155,60'
   },
   {
-    id: 5,
+    id: 4,
     titulo:'AMOXICILINA TEUTO 500MG COM 21 COMPRIMIDOS',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 5',
@@ -52,7 +52,7 @@ let medicamentos = [
     valor: 'R$ 13,00'
   },
   {
-    id: 6,
+    id: 5,
     titulo:'SALBUTAMOL GLENMARK 100MCG GENERICO',
     imagem:'./images/remedio.png',
     imagemAlt: 'Foto de remedio 6',
@@ -66,12 +66,6 @@ let cardBody = document.querySelector('#card-body')
 
 createHeader(header, logo, menus);
 createCards(cardBody, medicamentos.length, medicamentos);
-
-
-
-
-
-
 
 
 
