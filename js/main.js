@@ -1,6 +1,7 @@
 import createHeader from "./header.js";
 import createCards from "./card.js";
 import createOptions from "./selectOption.js";
+import submitForm from "./form.js";
 
 /* Dados */
 let menus = ['Todos os remédios', 'Sobre nós', 'Fale conosco'];
@@ -75,6 +76,7 @@ let assuntos = ['Selecione', 'Comercial', 'Dúvidas', 'Revenda'];
 let header = document.getElementsByTagName('header')[0];
 let cardBody = document.querySelector('#card-body');
 let assuntoElement = document.getElementById('assunto')
+let formElement = document.querySelector('form')
 
 /* Criação */
 createHeader(header, logo, menus);
@@ -85,5 +87,9 @@ if (cardBody != null) {
 
 if (assuntoElement != null) {
   createOptions(assuntoElement, assuntos);
+}
+
+if (formElement != null) {
+  submitForm(formElement)
 }
 

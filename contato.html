@@ -55,39 +55,39 @@
       </div>
 
       <div class="container py-3">
-        <form class="needs-validation" novalidate="">
+        <form class="needs-validation" method="get">
           <div class="row g-4">
 
             <div class="col-12">
               <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Informe seu nome" value="" required>
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Informe seu nome" required />
             </div>
 
             <div class="col-12">
               <label for="telefone" class="form-label">Telefone para contato</label>
-              <input type="tel" class="form-control" id="telefone" placeholder="Informe seu telefone">
+              <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="Informe seu telefone" />
             </div>
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Informe seu email">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Informe seu email" required />
             </div>
 
             <div class="col-12">
               <label for="assunto" class="form-label">Assunto</label>
-              <select class="form-control" id="assunto">
+              <select name="assunto" class="form-control" id="assunto">
               </select>
             </div>
 
             <div class="col-12">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="mensagem" rows="3">Digite sua mensagem...</textarea>
+              <label required for="mensagem" class="form-label">Mensagem</label>
+              <textarea name="mensagem" class="form-control" id="mensagem" rows="3">Digite sua mensagem...</textarea>
             </div>
 
             <div class="col-12">
               <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Esta mensagem é sobre um orçamento</label>
+                <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" />
+                <label class="form-check-label" for="checkbox">Esta mensagem é sobre um orçamento</label>
               </div>
             </div>
 
