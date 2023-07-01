@@ -42,6 +42,11 @@ h4.heart i:hover {
   transition: transform .3s;
 }
 
+#card-body img {
+  width: 200px;
+  height: 200px;
+}
+
 /* localizacao */
 iframe {
   width: 100%;
